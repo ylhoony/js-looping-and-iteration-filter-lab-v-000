@@ -1,5 +1,5 @@
 // Code your solution in this file
- 
+
 function findMatching(collection, name) {
   const sameName = [];
 
@@ -9,4 +9,8 @@ function findMatching(collection, name) {
     }
   }
   return sameName;
+}
+
+function fuzzyMatch() {
+  
 }
