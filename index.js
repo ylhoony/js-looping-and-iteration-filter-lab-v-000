@@ -18,12 +18,7 @@ function findMatching(collection, name) {
 }
 
 function fuzzyMatch(collection, letters) {
-  const matchingCollection = [];
-
-  for (const name of collection) {
-    if (name.slice(letters.length) === letters.length) {
-      matchingCollection.push(name);
-    }
-  }
-  return sameName;
+  collection.filter(function(nameEach) {
+    return nameEach.slice(letters.length) === letters;
+  })
 }
