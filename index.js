@@ -19,7 +19,7 @@ function findMatching(collection, name) {
 
 function fuzzyMatch(collection, letters) {
   return collection.filter(function(nameEach) {
-    return nameEach.slice(letters.length - 1) === letters;
+    return nameEach.slice(letters.length +1) === letters;
   });
 }
 
