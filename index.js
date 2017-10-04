@@ -4,7 +4,7 @@ function findMatching(collection, name) {
   const sameName = [];
 
   for (const nameEach of collection) {
-    if (nameEach === name) {
+    if (nameEach.toUpperCase() === name.toUpperCase()) {
       sameName.push(nameEach);
     }
   }
