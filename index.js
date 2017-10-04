@@ -12,7 +12,7 @@
 // }
 
 function findMatching(collection, name) {
-  return collection.filter(function(nameEach) {return nameEach === name})
+  return collection.filter(function(nameEach) {return nameEach.toUpperCase() === name.toUpperCase()})
 }
 
 function fuzzyMatch(collection, letters) {
