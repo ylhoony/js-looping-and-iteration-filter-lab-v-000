@@ -2,7 +2,7 @@
 
 // function findMatching(collection, name) {
 //   const sameName = [];
-// 
+//
 //   for (const nameEach of collection) {
 //     if (nameEach.toUpperCase() === name.toUpperCase()) {
 //       sameName.push(nameEach);
@@ -12,7 +12,7 @@
 // }
 
 function findMatching(collection, name) {
-  collection.filter(function(nameEach) {return nameEach === name})
+  return collection.filter(function(nameEach) {return nameEach === name})
 }
 
 function fuzzyMatch(collection, letters) {
