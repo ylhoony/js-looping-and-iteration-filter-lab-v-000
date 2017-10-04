@@ -24,7 +24,7 @@ function fuzzyMatch(collection, letters) {
 }
 
 function matchName(collection, name) {
-  collection.filter(function(driver) {
-
+  return collection.filter(function(driver) {
+    return driver.name === name;
   })
 }
