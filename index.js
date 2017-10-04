@@ -11,6 +11,13 @@ function findMatching(collection, name) {
   return sameName;
 }
 
-function fuzzyMatch() {
-  
+function fuzzyMatch(collection, letters) {
+  const matchingCollection = [];
+
+  for (const name of collection) {
+    if (name.slice(letters.length) === letters.length) {
+      matchingCollection.push(name);
+    }
+  }
+  return sameName;
 }
