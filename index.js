@@ -19,12 +19,12 @@ function findMatching(collection, name) {
 
 function fuzzyMatch(collection, letters) {
   return collection.filter(function(nameEach) {
-    return nameEach.search(letters);
+    return nameEach.slice(letters.length) === letters;
   });
 }
 
 function matchName(collection, name) {
   collection.filter(function(driver) {
-    
+
   })
 }
