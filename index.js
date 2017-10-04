@@ -12,8 +12,8 @@
 // }
 
 function findMatching(collection, name) {
-  return collection.filter(function(nameEach) {
-    return nameEach.toUpperCase() === name.toUpperCase();
+  return collection.filter(function(driver) {
+    return driver.toUpperCase() === name.toUpperCase();
   });
 }
 
@@ -21,4 +21,8 @@ function fuzzyMatch(collection, letters) {
   collection.filter(function(nameEach) {
     return nameEach.search(letters);
   });
+}
+
+function matchName(collection, name) {
+  collection.filter(function(driver))
 }
