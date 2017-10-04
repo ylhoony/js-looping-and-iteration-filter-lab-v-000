@@ -1,14 +1,18 @@
 // Code your solution in this file
 
-function findMatching(collection, name) {
-  const sameName = [];
+// function findMatching(collection, name) {
+//   const sameName = [];
+// 
+//   for (const nameEach of collection) {
+//     if (nameEach.toUpperCase() === name.toUpperCase()) {
+//       sameName.push(nameEach);
+//     }
+//   }
+//   return sameName;
+// }
 
-  for (const nameEach of collection) {
-    if (nameEach.toUpperCase() === name.toUpperCase()) {
-      sameName.push(nameEach);
-    }
-  }
-  return sameName;
+function findMatching(collection, name) {
+  collection.filter(function(nameEach) {return nameEach === name})
 }
 
 function fuzzyMatch(collection, letters) {
