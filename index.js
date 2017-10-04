@@ -8,5 +8,5 @@ function findMatching(collection, name) {
       sameName.push(nameEach);
     }
   }
-  
+  return sameName;
 }
